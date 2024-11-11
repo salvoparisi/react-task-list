@@ -51,12 +51,12 @@ main div {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-main div strong {
+strong {
     font-size: 1.2rem;
     color: #333;
 }
 
-main div span {
+span {
     float: right;
     font-size: 0.9rem;
     color: #666;
@@ -65,7 +65,7 @@ main div span {
     border-radius: 12px;
 }
 
-main div p {
+p {
     font-size: 0.9rem;
     color: #666;
     margin-top: 8px;
@@ -82,4 +82,9 @@ footer {
     padding: 10px;
     color: #999;
     font-size: 0.8rem;
+}
+
+.taskDone {
+    background-color: rgb(0, 255, 0);
+    color: black;
 }

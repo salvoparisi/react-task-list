@@ -99,7 +99,7 @@ export default function AppMain() {
             {tasksComplete.map((task, index) =>
                 <div key={index}>
                     <strong>{task.title}</strong>
-                    <span>{task.state}</span>
+                    <span className="taskDone">{task.state}</span>
                     <p>Priority: {task.priority}</p>
                     <p>Estitated Time: {task.estimatedTime}</p>
                 </div>
