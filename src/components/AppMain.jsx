@@ -86,8 +86,8 @@ export default function AppMain() {
     return (
         <main>
             <h2>Current Tasks ({tasksCurrent.length})</h2>
-            {tasksCurrent.map(task =>
-                <div>
+            {tasksCurrent.map((task, index) =>
+                <div key={index}>
                     <strong>{task.title}</strong>
                     <span>{task.state}</span>
                     <p>Priority: {task.priority}</p>
@@ -96,8 +96,8 @@ export default function AppMain() {
             )}
             <hr />
             <h2>Completed Tasks ({tasksComplete.length})</h2>
-            {tasksComplete.map(task =>
-                <div>
+            {tasksComplete.map((task, index) =>
+                <div key={index}>
                     <strong>{task.title}</strong>
                     <span>{task.state}</span>
                     <p>Priority: {task.priority}</p>
